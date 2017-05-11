@@ -80,8 +80,6 @@
 
     gradAction.backgroundColor = [UIColor colorWithRed:1.00 green:0.00 blue:0.50 alpha:1.0];
 
-
-
     UITableViewRowAction *employedAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"EMPLOYED" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
     
         self.cohort[indexPath.row].CF = @"EMPLOYED!";
@@ -91,40 +89,11 @@
     
     employedAction.backgroundColor = [UIColor colorWithRed:0.00 green:0.90 blue:0.93 alpha:1.0];
     
-    return @[employedAction, gradAction];
+    return @[gradAction, employedAction];
 }
 
 @end
 
-
-//
-//-(NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
-//
-//    UITableViewRowAction *gradAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"GRAD" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-//
-//        self.cohort[indexPath.row].CF = @"graduate";
-//        [self.tableView reloadData];
-//
-//    }];
-//
-//    gradAction.backgroundColor = [UIColor colorWithRed:1.00 green:0.00 blue:0.50 alpha:1.0];
-//
-//
-//
-//    return @[gradAction];
-//}
-
-
-//UITableViewRowAction *employedAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"EMPLOYED" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-//    
-//    self.cohort[indexPath.row].CF = @"EMPLOYED!";
-//    [self.tableView reloadData];
-//    
-//}];
-//
-//employedAction.backgroundColor = [UIColor colorWithRed:0.00 green:0.90 blue:0.93 alpha:1.0];
-//
-//return @[gradAction, employedAction];
 
 
 
